@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./index.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+<!-- rating card initial -->
+<article class="rating-card" id="initial-card">
+  <div class="star-icon">
+    <img src="./images/icon-star.svg" alt="star icon">
+  </div>
+  <h1>How did we do?</h1>
+  <p id="feedback-request">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+  <div class="ratings-container">
+  <button type="text" class="ratings" id="rating1">1</button>
+  <button type="text" class="ratings" id="rating2">2</button>
+  <button type="text" class="ratings" id="rating3">3</button>
+  <button type="text" class="ratings" id="rating4">4</button>
+  <button type="text" class="ratings" id="rating5">5</button>
+  </div>
+  <br>  
+  <button type="submit" class="submit-button" id="submit-btn">SUBMIT</button>
+</article>
+
+<!-- rating card post message -->
+<article class="rating-card-end" id="end-card">
+  <div class="end-icon">
+    <img src="./images/illustration-thank-you.svg" alt="thank you icon">
+  </div>
+  <p>You selected <!-- Add rating here --> out of 5</p>
+  <p>Thank you!</p>
+  <br>
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don't hesitate to get in touch!</p>
+  <br>
+  <button type="submit" class="submit-button" id="return-btn">RETURN</button>
+</article>
+
+</body>
+</html>
