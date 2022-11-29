@@ -2,7 +2,9 @@
 const endCard = document.getElementById('end-card');
 const initialCard = document.getElementById('initial-card');
 const submitBtn = document.getElementById('submit-btn');
-const returnBtn = document.getElementById('return-btn')
+const returnBtn = document.getElementById('return-btn');
+const rating = document.getElementById('rating');
+const ratings = document.querySelectorAll('.ratings');
 
 // function to display thank you
 const nextContent = () => {
@@ -14,7 +16,14 @@ const nextContent = () => {
 const returnContent = () => {
     initialCard.style.display = 'inline';
     endCard.style.display = 'none';
-}
+};
+
+// for loop
+ratings.forEach(rate => {
+    rate.addEventListener('click', () => {
+        rating.innerHTML = rate.innerHTML;
+    })
+});
 
 
 // event listeners
